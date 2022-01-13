@@ -1,9 +1,14 @@
 import React  from "react";
 
+import Card from "../../shared/components/UIElements/Card"
+import WelcomeIntro from "../components/WelcomeIntro";
+
 const Welcome = () => {
     console.log("welcome")
     return(
-        <h1>Welcome Home</h1>
+        <Card>
+            <WelcomeIntro/>
+        </Card>
     )
 }
 
