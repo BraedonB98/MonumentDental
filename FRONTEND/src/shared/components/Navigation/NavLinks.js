@@ -12,7 +12,7 @@ const NavLinks = props => {
                 <NavLink to ="/" exact>HOME</NavLink>
             </li>
             <li>
-                <NavLink to = {`/Services`}> Services </NavLink>
+                <NavLink to = {`/Services`}>Services</NavLink>
             </li>
             <li>
                 <NavLink to = {`/About`}> About Us </NavLink>

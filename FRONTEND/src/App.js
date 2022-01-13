@@ -1,7 +1,10 @@
 import React from 'react';
 import { BrowserRouter as Router, Route , Navigate, Routes} from 'react-router-dom';
 
-//import MainNavigation from './shared/components/Navigation/MainNavigation';
+import Contact from './patients/pages/Contact';
+import NewPatient from './patients/pages/NewPatient';
+import About from './practice/pages/About';
+import Services from './practice/pages/Services';
 import Welcome from './practice/pages/Welcome';
 import MainNavigation from './shared/components/Navigation/MainNavigation';
 
@@ -13,7 +16,10 @@ function App() {
   routes = (
     <Routes>
       <Route path="/" exact element={<Welcome/>}/>
-      
+      <Route path="/About" exact element={<About/>}/>
+      <Route path="/Services"  element={<Services/>}/>
+      <Route path="/Contact" exact element={<Contact/>}/>
+      <Route path="/NewPatient" exact element={<NewPatient/>}/>
     </Routes>
     );
     return(
