@@ -28,6 +28,7 @@ function App() {
         <main>
           {routes}
         </main>
+        <footer>Copyright 2016. Monument Dental. All Rights Reserved.</footer>
       </Router>
     )
 }

@@ -1,9 +1,9 @@
 import React  from "react";
-
+import DentalServices from "../components/DentalServices"
 
 const Services = () => {
     return(
-      <h1>Services</h1>
+      <DentalServices/>
     )
 }
 
