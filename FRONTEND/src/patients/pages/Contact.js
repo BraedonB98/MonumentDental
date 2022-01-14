@@ -5,9 +5,10 @@ import ContactUs from "../components/ContactUs";
 const Contact = () => {
     return(
       <React.Fragment>
-        <PracticeInfo/>
-        <ContactUs/>
-
+        <div className = "Text__Body">
+          <PracticeInfo/>
+          <ContactUs/>
+        </div>
       </React.Fragment>
     )
 }

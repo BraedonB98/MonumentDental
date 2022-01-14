@@ -3,7 +3,9 @@ import DentalServices from "../components/DentalServices"
 
 const Services = () => {
     return(
-      <DentalServices/>
+      <div className = "Text__Body">
+        <DentalServices/>
+      </div>
     )
 }
 

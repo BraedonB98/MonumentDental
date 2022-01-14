@@ -40,3 +40,8 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+.Text__Body{
+  width: 90%;
+  margin:auto;
+}

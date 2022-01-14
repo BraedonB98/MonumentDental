@@ -1,9 +1,11 @@
 import React  from "react";
-
+import NewPatientInfo from "../components/NewPatientInfo";
 
 const NewPatient = () => {
     return(
-      <h1>NewPatient</h1>
+      <div className = "Text__Body">
+        <NewPatientInfo/>
+      </div>
     )
 }
 

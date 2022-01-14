@@ -5,7 +5,7 @@ import AboutPractice from "../components/AboutPractice";
 
 const About = () => {
     return(
-      <div>
+      <div className = "Text__Body">
         <h1>About Monument Dental</h1>
         <AboutPractice/>
         <h1>Our Staff</h1>
