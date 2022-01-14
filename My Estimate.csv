@@ -1,0 +1,8 @@
+﻿Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Configuration summary
+My Estimate,US East (Ohio),,Amazon API Gateway,0,0.001,0.01,USD,"HTTP API requests units (thousands), Average size of each request (34 KB), REST API request units (thousands), Cache memory size (GB) (None), WebSocket message units (thousands), Average message size (32 KB), Requests (1 per month), Requests ( per month)"
+My Estimate,US East (Ohio),,AWS Amplify,0,0.915,10.98,USD,"Number of build minutes (5 per month), Data stored per month (5 GB), Data served per month (5 GB)"
+
+
+
+Acknowledgement
+"* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services."
