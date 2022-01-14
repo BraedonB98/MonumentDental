@@ -1,9 +1,16 @@
 import React  from "react";
+import StaffList from "../components/StaffList";
+import AboutPractice from "../components/AboutPractice";
 
 
 const About = () => {
     return(
-      <h1>About</h1>
+      <div>
+        <h1>About Monument Dental</h1>
+        <AboutPractice/>
+        <h1>Our Staff</h1>
+        <StaffList/>
+      </div>
     )
 }
 
