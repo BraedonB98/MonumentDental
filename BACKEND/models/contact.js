@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const uniqueValidator = require('mongoose-unique-validator');
+
 
 const Schema = mongoose.Schema;
 
@@ -11,6 +11,6 @@ const contactSchema = new Schema({
     message:{type:String, required:true ,minLength: 5},
 });
 
-contactSchema.plugin(uniqueValidator);
+;
 
 module.exports = mongoose.model('Contact',contactSchema);
