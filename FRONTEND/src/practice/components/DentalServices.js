@@ -8,7 +8,7 @@ const DentalServices = () => {
                 <p>Our treatment philosophy is geared toward preventing future dental problems. We treat patients of ALL ages and we offer a broad range of treatment modalities, ranging from the most basic to the state of the art.</p>
             </div>
             <div>
-            <h1>Comprehensive services:</h1>
+            <h2>Comprehensive services:</h2>
                 <ul>
                     <li>Dental Cleaning</li>
                     <li>Preventive Dentistry</li>

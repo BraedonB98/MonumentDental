@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route , Navigate, Routes} from 'react-router-dom';
+import { BrowserRouter as Router, Route , Routes} from 'react-router-dom'; //also import Navigate for default routing
 
 import Contact from './patients/pages/Contact';
 import NewPatient from './patients/pages/NewPatient';
@@ -28,7 +28,14 @@ function App() {
         <main>
           {routes}
         </main>
-        <footer>Copyright 2016. Monument Dental. All Rights Reserved.</footer>
+        <footer style = {{
+            position: "fixed",
+            padding: "10px 10px 0px 10px",
+            bottom: "0",
+            width: "100%",
+            /* Height of the footer*/ 
+            height: "40px",
+            background: "#7C99AC"}}>Copyright 2016. Monument Dental. All Rights Reserved.</footer>
       </Router>
     )
 }

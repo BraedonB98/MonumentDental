@@ -1,9 +1,14 @@
 import React  from "react";
-
+import PracticeInfo from "../components/PracticeInfo";
+import ContactUs from "../components/ContactUs";
 
 const Contact = () => {
     return(
-      <h1>Contact</h1>
+      <React.Fragment>
+        <PracticeInfo/>
+        <ContactUs/>
+
+      </React.Fragment>
     )
 }
 
