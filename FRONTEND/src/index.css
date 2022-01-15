@@ -12,7 +12,10 @@ body {
   margin: 0;
   background: #92A9BD;
 }
-
+a{
+  color:black;
+  text-decoration: none;
+}
 .slide-in-left-enter {
   transform: translateX(-100%);
 }

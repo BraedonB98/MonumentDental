@@ -38,14 +38,16 @@ const ContactUs = props => {
           event.preventDefault();
           console.log("here")
           try{
-            //const responseData = await sendRequest(
-            //    'http://localhost:5000/api/users/login',
-            //    'POST',
-           //     JSON.stringify({
-            //      email: formState.inputs.email.value,
-            //      password : formState.inputs.password.value}),
-            //      {'Content-Type': 'application/json'});
-            console.log(formState.inputs);
+            const responseData = await sendRequest(
+                'http://localhost:5000/api/contact',
+                'POST',
+                JSON.stringify({
+                  name : formState.inputs.name.value,
+                  email: formState.inputs.email.value,
+                  phoneNumber : formState.inputs.phoneNumber.value,
+                  message : formState.inputs.message.value}),
+                  {'Content-Type': 'application/json'});
+            console.log(responseData);
             
           }
           catch(error){

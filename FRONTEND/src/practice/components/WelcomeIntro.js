@@ -2,11 +2,15 @@ import React from "react";
 
 
 const WelcomeIntro = () => {
-    
+    const d = new Date();
+    const getOpenTime = () =>{
+        const year = d.getFullYear();
+        return (year-2002);
+    }
     return (
         <React.Fragment>
         <h1>Welcome To Monument Dental</h1>
-        <p>For nearly 15 years, Marcus Bellamy DMD and his team have been providing exceptional restorative and cosmetic dental care services to the community of Monument, CO and surrounding areas</p><br/>
+        <p>For nearly {getOpenTime()} years, Marcus Bellamy DMD and his team have been providing exceptional restorative and cosmetic dental care services to the community of Monument, CO and surrounding areas</p><br/>
 
         <p>The team at Monument Dental is committed to providing exceptional dental care to patients of all ages.  By providing everything from basic preventative dental care to the most complex cosmetic procedures, Dr. Bellamy has become one of the preferred providers in the Monument area. </p><br/>
  
