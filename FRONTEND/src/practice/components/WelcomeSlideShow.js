@@ -6,14 +6,17 @@ const slideImages = [
   {
     url: "./images/Xray.jpg",
     caption: "Best in Class service",
+    focal: [50, 25],
   },
   {
     url: "./images/Local.jpg",
     caption: "Locally Owned",
+    focal: [50, 40],
   },
   {
     url: "./images/Family.jpg",
     caption: "Family Ran",
+    focal: [50, 15],
   },
 ];
 
@@ -25,7 +28,10 @@ const WelcomeSlideShow = () => {
           <div className="WelcomeSlideShow__each-slide" key={index}>
             <div
               className="WelcomeSlideShow__image"
-              style={{ backgroundImage: `url(${slideImage.url})` }}
+              style={{
+                backgroundImage: `url(${slideImage.url})`,
+                backgroundPosition: `${slideImage.focal[0]}% ${slideImage.focal[1]}%`,
+              }}
             >
               <span>{slideImage.caption}</span>
             </div>
