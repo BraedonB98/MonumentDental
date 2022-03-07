@@ -9,7 +9,7 @@ const StaffList = () => {
       <h1 className="staff-list__title">Our Staff</h1>
       <ul className="staff-list">
         <StaffItem
-          name="Marcus"
+          name="Dr. Bellamy"
           position="Dentist"
           comment="Dr. Bellamy has extensive experience in general and cosmetic dentistry and maintains the most state-of-the-art dental equipment right in his office. Patients appreciate the fast and pain-free procedures offered at Monument Dental. As a family-oriented dental practice, they offer a wide variety of restorative and cosmetic dental services, including dental implants, veneers, , crowns, root canals, extractions and more."
           imageUrl="./images/MarcusB.jpg"
@@ -23,13 +23,23 @@ const StaffList = () => {
         <StaffItem
           name="Jennifer"
           position="Hygienist"
-          comment="Here is the comment"
+          comment="Jennifer graduated from Pueblo Community College with
+          an Associate of Applied Science Degree of Dental Hygiene in May 2008.She was the sole recipient of the 2008 Southeastern Colorado Dental Society Periodontal Award- for demonstrating clinical excellence in treatment of periodontally involved patients.
+         
+         Jennifer is passionate about using her dental hygiene
+          training to volunteer. She participated in a dental mission trip to South Africa in 2009 and has volunteered at Colorado Mission of Mercy.She looks forward to future overseas dental mission trips.
+         
+         Jennifer regularly attends continuing education courses
+          and is a member of the Colorado Springs Dental Hygiene Seattle Study Club.
+         
+         In her free time Jennifer loves to spend time with her
+          family and friends.  Her husband Jonathan and daughter Lilly are her favorite people and when they are not working or in school you will find them camping, playing pickleball or at the beach.  "
           imageUrl="./images/JenniferB.jpg"
         />
         <StaffItem
           name="Mary Jo"
           position="Hygienist"
-          comment="Here is the comment"
+          comment="Mary Jo Giudice, a 1976 graduate of the University of South Dakota Dept. of Dental Hygiene.  With over 45 years of experience, Mary Jo’s professional goal is to provide the care and knowledge, to her patients, necessary for having healthy teeth and gums."
           imageUrl="./images/MaryJ.jpeg"
         />
         <StaffItem

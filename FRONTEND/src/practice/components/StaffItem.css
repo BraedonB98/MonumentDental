@@ -28,7 +28,12 @@
   text-align: center;
   padding: 0;
 }
-
+.staff-item__modal-image-div {
+  width: 20rem;
+  height: 20rem;
+  margin-right: auto;
+  margin-left: auto;
+}
 .staff-item__image {
   width: 4rem;
   height: 4rem;
