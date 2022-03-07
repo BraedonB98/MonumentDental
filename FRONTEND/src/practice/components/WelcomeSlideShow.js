@@ -1,36 +1,39 @@
-import React from 'react';
-import { Slide } from 'react-slideshow-image';
-import 'react-slideshow-image/dist/styles.css'
-import './WelcomeSlideShow.css'
+import React from "react";
+import { Slide } from "react-slideshow-image";
+import "react-slideshow-image/dist/styles.css";
+import "./WelcomeSlideShow.css";
 const slideImages = [
   {
-    url: 'https://upload.wikimedia.org/wikipedia/commons/e/e7/Everest_North_Face_toward_Base_Camp_Tibet_Luca_Galuzzi_2006.jpg',
-    caption: 'Slide 1'
+    url: "./images/Xray.jpg",
+    caption: "Best in Class service",
   },
   {
-    url: 'https://res.cloudinary.com/dk-find-out/image/upload/q_80,w_1920,f_auto/A-Alamy-BXWK5E_vvmkuf.jpg',
-    caption: 'Slide 2'
+    url: "./images/Local.jpg",
+    caption: "Locally Owned",
   },
   {
-    url: 'https://files.worldwildlife.org/wwfcmsprod/images/Mountains_New_Hero_Image/story_full_width/5c6n24n4pm_mountains_hero.jpg',
-    caption: 'Slide 3'
+    url: "./images/Family.jpg",
+    caption: "Family Ran",
   },
 ];
 
 const WelcomeSlideShow = () => {
-    return (
-      <div className="WelcomeSlideShow__slide-container">
-        <Slide cssClass = "WelcomeSlideShow__slide">
-         {slideImages.map((slideImage, index)=> (
-            <div className="WelcomeSlideShow__each-slide" key={index}>
-              <div className="WelcomeSlideShow__image"style={{'backgroundImage': `url(${slideImage.url})`}}>
-                <span>{slideImage.caption}</span>
-              </div>
+  return (
+    <div className="WelcomeSlideShow__slide-container">
+      <Slide cssClass="WelcomeSlideShow__slide">
+        {slideImages.map((slideImage, index) => (
+          <div className="WelcomeSlideShow__each-slide" key={index}>
+            <div
+              className="WelcomeSlideShow__image"
+              style={{ backgroundImage: `url(${slideImage.url})` }}
+            >
+              <span>{slideImage.caption}</span>
             </div>
-          ))} 
-        </Slide>
-      </div>
-    )
-}
+          </div>
+        ))}
+      </Slide>
+    </div>
+  );
+};
 
 export default WelcomeSlideShow;
