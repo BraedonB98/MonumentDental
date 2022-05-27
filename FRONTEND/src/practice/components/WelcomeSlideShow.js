@@ -4,17 +4,17 @@ import "react-slideshow-image/dist/styles.css";
 import "./WelcomeSlideShow.css";
 const slideImages = [
   {
-    url: `${process.env.REACT_APP_ASSET_URL}/images/Xray.jpg`,
+    url: `./Images/Xray.jpg`,
     caption: "Best in Class service",
     focal: [50, 25],
   },
   {
-    url: `${process.env.REACT_APP_ASSET_URL}/images/Local.jpg`,
+    url: `./Images/Local.jpg`,
     caption: "Locally Owned",
     focal: [50, 40],
   },
   {
-    url: `${process.env.REACT_APP_ASSET_URL}/images/Family.jpg`,
+    url: `./Images/Family.jpg`,
     caption: "Family Ran",
     focal: [50, 15],
   },
