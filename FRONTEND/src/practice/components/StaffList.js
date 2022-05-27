@@ -51,7 +51,7 @@ const StaffList = () => {
           imageUrl="./images/DanielleR.jpg"
         />
         <StaffItem
-          name="Falicia"
+          name="Felicia"
           position="Dental Assistant"
           comment="Felicia a Colorado native has been in the dental field for 12 years. She enjoys hiking, gardening and spending time with family. "
           imageUrl="./images/FaliciaO.jpg"
