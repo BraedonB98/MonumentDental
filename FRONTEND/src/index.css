@@ -16,6 +16,7 @@ a {
   color: black;
   text-decoration: none;
 }
+
 .slide-in-left-enter {
   transform: translateX(-100%);
 }

@@ -96,8 +96,6 @@ const ContactUs = (props) => {
           />
           <Input
             element="textarea"
-            id="message"
-            type="textarea"
             label="Message"
             validators={[VALIDATOR_MINLENGTH(10)]}
             errorText="Please enter a message at least 10 letters."
