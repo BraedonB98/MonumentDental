@@ -11,7 +11,7 @@ const slideImages = [
   {
     url: `./Images/Local.jpg`,
     caption: "Locally Owned",
-    focal: [50, 40],
+    focal: [25, 40],
   },
   {
     url: `./Images/Family.jpg`,
