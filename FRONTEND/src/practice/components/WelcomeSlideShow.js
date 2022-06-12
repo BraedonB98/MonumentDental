@@ -19,25 +19,29 @@ const slideImages = [
     focal: [50, 15],
   },
 ];
-
+let isIOS =
+  /iPad|iPhone|iPod/.test(navigator.platform) ||
+  (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
 const WelcomeSlideShow = () => {
   return (
     <div className="WelcomeSlideShow__slide-container">
-      <Slide cssClass="WelcomeSlideShow__slide">
-        {slideImages.map((slideImage, index) => (
-          <div className="WelcomeSlideShow__each-slide" key={index}>
-            <div
-              className="WelcomeSlideShow__image"
-              style={{
-                backgroundImage: `url(${slideImage.url})`,
-                backgroundPosition: `${slideImage.focal[0]}% ${slideImage.focal[1]}%`,
-              }}
-            >
-              <span>{slideImage.caption}</span>
+      {!isIOS && (
+        <Slide cssClass="WelcomeSlideShow__slide">
+          {slideImages.map((slideImage, index) => (
+            <div className="WelcomeSlideShow__each-slide" key={index}>
+              <div
+                className="WelcomeSlideShow__image"
+                style={{
+                  backgroundImage: `url(${slideImage.url})`,
+                  backgroundPosition: `${slideImage.focal[0]}% ${slideImage.focal[1]}%`,
+                }}
+              >
+                <span>{slideImage.caption}</span>
+              </div>
             </div>
-          </div>
-        ))}
-      </Slide>
+          ))}
+        </Slide>
+      )}
     </div>
   );
 };
