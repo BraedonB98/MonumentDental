@@ -1,5 +1,5 @@
 import React from "react";
-import { FiDownload } from "react-icons/fi";
+import Button from "../../shared/components/FormElements/Button";
 
 const NewPatient = () => {
   return (
@@ -37,9 +37,16 @@ const NewPatient = () => {
       </ul>
 
       <h4>
-        <a href={"MD-NewPatientForm.pdf"} target="_blank">
-          New Patient Forms <FiDownload />
-        </a>
+        <Button>
+          <a
+            href={
+              "https://forms.mydentistlink.com/594cb35d-3be3-4283-af5d-294164f49a3d"
+            }
+            target="_blank"
+          >
+            New Patient Forms
+          </a>
+        </Button>
       </h4>
       <p>
         We recommend you download our new patient forms and complete them prior
